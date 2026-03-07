@@ -8,7 +8,7 @@ on:
         required: true
         default: 'dzinggo'
       agent_description:
-        description: 'dzinggo'
+        description: 'dzinggo AI Agent'
         required: true
         default: 'dzinggo AI Agent'
 
@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies (Bypass Clawhub)
+      - name: Install dependencies
         run: |
           npm install
           cd scripts
